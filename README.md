@@ -6,9 +6,12 @@ A guide for installing TrollStore using TrollRestore can be found [here](https:/
 # Usage
 To run the script, clone this repository and run the following commands:
 ```sh
-pip install -r requirements.txt
-python3 trollstore.py
+python3 -m venv venv
+venv/bin/pip3 install -r requirements.txt
+venv/bin/python3 trollstore.py
 ```
+
+For Windows-specific setup and usage, refer to this gist: https://gist.github.com/LukeZGD/26c9d384e0050b1faebce0958fcd9e38
 
 # Post-installation
 TrollRestore does not restore a proper persistence helper - it simply replaces the main binary of a system app with an embedded TrollHelper. Thus, after installing TrollStore, it is recommended to install a persistence helper (you can use the same app used with TrollRestore as your persistence helper). Due to the nature of the installer (and its use of backups), the only way to restore your chosen app to it's original state is to delete it and re-install the app from the App Store.
